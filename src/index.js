@@ -23,3 +23,11 @@ export function numToPower3(a){
     return 'Bad input'
   return a**3
 }
+
+// create an object to combine both functions from the module to be imported as default
+// and referenced in the test 
+const mathService = {
+  sum,
+  numToPower3
+}
+export default mathService

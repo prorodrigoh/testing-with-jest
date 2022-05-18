@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652718110116" clover="3.2.0">
-  <project timestamp="1652718110116" name="All files">
-    <metrics statements="8" coveredstatements="7" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2" elements="18" coveredelements="16" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
-    <file name="index.js" path="/Users/RODMAC/code/testing-with-jest/src/index.js">
-      <metrics statements="8" coveredstatements="7" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
+<coverage generated="1652885263483" clover="3.2.0">
+  <project timestamp="1652885263483" name="All files">
+    <metrics statements="9" coveredstatements="8" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2" elements="19" coveredelements="17" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="/Users/RODMAC/code/code-offline/testing-with-jest/src/index.js">
+      <metrics statements="9" coveredstatements="8" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
       <line num="10" count="3" type="cond" truecount="4" falsecount="0"/>
       <line num="11" count="1" type="stmt"/>
       <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -12,6 +12,7 @@
       <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="23" count="0" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

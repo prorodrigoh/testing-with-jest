@@ -1,4 +1,4 @@
-import {sum as sut, numToPower3} from '../src/index.js';
+import sut from '../src/index.js';
 
 describe("The tests for sum", () => {
     it('Should subtract 2 numbers if a < b', () => {
@@ -7,7 +7,7 @@ describe("The tests for sum", () => {
         const b = 3
         const expected = 1
         // ACT - call the function to be tested
-        const actual = sut(a,b)
+        const actual = sut.sum(a,b)
         // ASSERT - is the result what we expected
         expect(actual).toBe(expected)
     });
@@ -18,7 +18,7 @@ describe("The tests for sum", () => {
         const d = 2
         const expected = 5
         // ACT - call the function to be tested
-        const actual = sut(c,d)
+        const actual = sut.sum(c,d)
         // ASSERT - is the result what we expected
         expect(actual).toBe(expected)
     });
@@ -28,7 +28,7 @@ describe("The tests for sum", () => {
         const b = 3
         const expected = 'Bad input'
         //
-        const actual = sut(a,b)
+        const actual = sut.sum(a,b)
         //
         expect(actual).toBe(expected)
     })
@@ -37,14 +37,24 @@ describe("The tests for sum", () => {
 describe("The tests for num at third power", () => {
 
     it('Should elevate a number to third power', () => {
+        // arrange
         const a = 3
         const expected = 27
+        // act
+        const actual = sut.numToPower3(a)
+        // assert
+        expect(actual).toBe(expected)
+    })
 
+    it('Should fail with a string input', () => {
+        const a = 'str'
+        const expected = 'Bad input'
         //
-        const actual = numToPower3(a)
+        const actual = sut.numToPower3(a)
         //
         expect(actual).toBe(expected)
     })
+
 })
 
 // ➜  testing-with-jest git:(main) ✗ npm test
